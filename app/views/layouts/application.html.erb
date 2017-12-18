@@ -18,7 +18,15 @@
       <div class="site-wrapper-inner">
         <div class="cover-container">
 
-          <div id="background"></div>
+          <%= video_tag(
+            'thunder.mp4',
+            id: 'background',
+            autoplay: true,
+            loop: true,
+            muted: true,
+            poster: 'background.jpg'
+            )
+            %>
 
           <%= render "shared/application_nav" %>
 
@@ -27,9 +35,9 @@
           <%= render "shared/application_footer" %>
 
           <%= source_helper("application") %>
+
         </div>
       </div>
     </div>
-  
   </body>
 </html>
